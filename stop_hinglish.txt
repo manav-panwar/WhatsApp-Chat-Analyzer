@@ -1053,6 +1053,7 @@ yeh
 yehi
 yes
 yet
+ker
 you
 you'd
 you'll
