@@ -1,8 +1,0 @@
-python == 3.12.8
-streamlit
-matplotlib
-seaborn
-urlextract
-pandas
-wordcloud
-emoji
