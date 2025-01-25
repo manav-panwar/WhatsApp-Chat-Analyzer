@@ -1,4 +1,4 @@
-import regex as re
+import re
 import pandas as pd
 def preprocess(data):
     pattern = r'\[\d{1,2}\/\d{1,2}\/\d{1,2},\s\d{1,2}:\d{1,2}:\d{1,2}\]\s'
