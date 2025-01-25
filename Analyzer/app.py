@@ -111,21 +111,19 @@ if uploaded_file is not None:
         with col1:
             st.dataframe(emoji_df)
         with col2:
-            font_path = "Noto_Color_Emoji/bobo.ttf"  # Replace with the actual path to the font on your system
+            font_path = "Fonts/bobo.ttf"  
             prop = font_manager.FontProperties(fname=font_path)
 
-            # Create the pie chart
             fig, ax = plt.subplots()
-            sizes = emoji_df[1]  # Counts column
-            emoji_labels = emoji_df[0]  # Emojis column
+            sizes = emoji_df[1] 
+            emoji_labels = emoji_df[0] 
 
-            # Plot the pie chart
             ax.pie(
                 sizes,
                 labels=emoji_labels,
                 autopct="%1.1f%%",
-                textprops={'fontproperties': prop}  # Use the custom font for text
+                textprops={'fontproperties': prop}  
             )
 
-            plt.axis('equal')  # Ensure the pie is a circle
+            plt.axis('equal')  
             st.pyplot(fig)
